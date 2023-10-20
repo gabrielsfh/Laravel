@@ -5,7 +5,7 @@ use Illuminate\Http\Request;
 class ProdutosController extends Controller
 {
     public function index(){
-        $produtos = produto::all();
+        $produtos = produto::paginate();
        // return $produtos;
         return view('produtos.index',['produtos'=> $produtos]);
     }

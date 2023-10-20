@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>O nome do produto é <?php echo $nome ?> e o valor <?php echo $valor ?></h1>
+    <h1>Retornando view<?php echo $nome ?></h1>
 </body>
 </html>
