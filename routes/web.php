@@ -6,15 +6,17 @@ use App\Http\Controllers\ProdutosController;
 use App\Http\Controllers\ClientesController;
 
 Route::get('/',HomeController::class);
-
-Route::get('produtos/inserir',[ProdutosController::class,'create'])->name('produtos.inserir');
-Route::get('produtos/{id}',[ProdutosController::class,'show'])->name('produtos.descricao');
 Route::get('produtos',[ProdutosController::class,'index'])->name('produtos');
+Route::get('produtos/inserir',[ProdutosController::class,'create'])->name('produtos.inserir');
+Route::post('produtos/insert',[ProdutosController::class,'insert'])->name('produtos.insert');
+Route::get('produtos/{produto}/edit',[ProdutosController::class,'edit'])->name('produtos.edit');
+Route::put('produtos/{produto}',[ProdutosController::class,'editar'])->name('produtos.editar');
+Route::delete('produtos/{produto}',[ProdutosController::class,'delete'])->name('produtos.delete');
 
-Route::get('clientes',function() {
-    return("Olá, seja bem vindo ao cadastro de cliente");
-});
 
 
-Route::post('produtos',[ProdutosController::class,'insert'])->name('produtos.insert');
-Route::get('clientes/{nome}',[ClientesController::class,'show']);
+Route::get('clientes',[ClientesController::class,'index'])->name('clientes');
+Route::get('produtos/{id}',[ProdutosController::class,'show'])->name('produtos.descricao');
+Route::get('clientes/inserir',[ClientesController::class,'inserir'])->name('clientes.inserir');
+Route::post('clientes/insert',[ProdutosController::class,'insert'])->name('clientes.insert');
+

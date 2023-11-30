@@ -1,0 +1,18 @@
+
+    <link rel="stylesheet" href="{{ asset('css/lib/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/lib/tailwind.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/lib/bootstrapTwitter.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/lib/dataTables.bootstrap4.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/lib/font-awesome.css') }}">
+
+    <script src="{{ asset('js/lib/jquery-3.5.1.slim.js' ) }}"></script>
+    <script src="{{ asset('js/lib/popper.js') }}"></script>
+    <script src="{{ asset('js/lib/bootstrap.js') }}"></script>
+
+    <!-- Scripts DataTables -->
+    <link rel="stylesheet" href="{{ asset('datatables/dataTables.bootstrap4.min.css') }}" >
+    <script src="{{ asset('datatables/jquery.dataTables.min.js')}}"></script>
+    <script src="{{ asset('datatables/dataTables.bootstrap4.min.js')}}"></script>
+    <script src="{{ asset('datatables/datatables-demo.js') }}"></script>
+
+
